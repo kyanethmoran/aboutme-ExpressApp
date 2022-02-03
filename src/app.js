@@ -22,9 +22,6 @@ hbs.registerPartials(partialsPath);
 app.use(express.static(publicDirectoryPath))
 
 
-// //this gets made with the publicDirectoryPath variable
-// app.use(express.static(publicDirectoryPath))
-
 
 //once app.use is made, make this
 app.get("/served", (req, res) => {
