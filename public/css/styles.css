@@ -26,6 +26,21 @@ li a:hover:not(.active) {
 .active {
     background-color: #04AA6D;
 }
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:600px){
+    .hidden-navtab{
+        display: none;
+    }
+}
+@media (min-width:601px){
+    .footer-social-link{
+        display: none;
+    }
+}
 
 /* slide container css for hobbies page and text*/
 .artSlides {
