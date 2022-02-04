@@ -10,8 +10,38 @@
 </head>
 <body>
     {{>header}}
-    <h1>This is my Hobbies HBS file</h1>
-    <div> {{>gameslide}}</div>
+    
+    <div class="hobby-slide-container">
+        <div class="gameslide wp-caption"> 
+            {{>gameslide}}
+            <p class="wp-caption-text">
+                Games
+            </p>
+        </div>
+        <article class="hobby-article">
+            <hr>
+            <h3 class="header-align">A way to Decompress</h3>
+            <p>
+                During my free time I enjoy playing video games as
+                a way to relieve stress and connect with long distance
+                friends. I play across various platforms and enjoy a 
+                variety of genres. I am by no means the best gamer, 
+                however the storys are incredibly entertaining to watch 
+                unfold and partake in.
+            </p>
+            <hr>
+        </article>
+
+        <div class="artslide wp-caption">
+            {{>artslide}}
+            <p class="wp-caption-text">
+                Art
+            </p>
+        </div>
+        <article class="hobby-article">
+            <h3 class="header-align">Exercising Creativity</h3>
+        </article>
+    </div>
 
     {{>footer}}
 </body>

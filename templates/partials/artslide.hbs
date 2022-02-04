@@ -1,0 +1,23 @@
+
+    <img class=" w3-animate-fading artSlides" src="/media/printmaking.jpg" style="width:100%">
+    <img class=" w3-animate-fading artSlides" src="/media/litho.jpg" style="width:100%">
+    <img class=" w3-animate-fading artSlides" src="/media/drawing.jpg" style="width:100%">
+
+
+{{!-- //script to run carousel --}}
+<script>
+var myIndexArt = 0;
+carouselArt();
+
+function carouselArt() {
+  var i;
+  var x = document.getElementsByClassName("artSlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndexArt++;
+  if (myIndexArt > x.length) {myIndexArt = 1}    
+  x[myIndexArt-1].style.display = "block";  
+  setTimeout(carouselArt, 9000);    
+}
+</script>

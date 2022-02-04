@@ -41,6 +41,18 @@ app.get("/hobbies", (req, res) => {
     })
 })
 
+app.get("/gaming", (req, res) => {
+    res.render("gaming", {
+        // gaming: "test"
+    })
+})
+
+app.get("/art", (req, res) => {
+    res.render("art", {
+        // gaming: "test"
+    })
+})
+
 app.get("/socials", (req, res) => {
     res.render("socials", {
         // socials: "test"
