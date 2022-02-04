@@ -84,7 +84,10 @@ li a:hover:not(.active) {
 
 /* Art page css */
 
-/*  */
+/* selfie image partial */
+.selfie{
+    border-radius: 50%;
+}
 
 
 /* footer css styling */
