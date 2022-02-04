@@ -86,8 +86,12 @@ li a:hover:not(.active) {
 
 /* selfie image partial */
 .selfie{
+    max-width: 60vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
     border-radius: 50%;
 }
+
 
 
 /* footer css styling */
